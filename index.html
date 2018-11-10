@@ -1,0 +1,151 @@
+<?php include("header.php")?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img
+{
+	border-radius: 90%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+	background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+	object-fit: center;
+	background-position:50%
+	width:360px;
+	height:50%;
+    color: Black;
+	
+	
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right 
+{
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: Grey;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 20%;
+	width: 30%;
+	height: 60%;
+    padding: 60px;
+	background-color:black;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-image: url('pat3.jpg');
+    padding: 20px;
+}
+*
+{
+	color:white;
+}
+
+.img {
+    background-position: 20% 50%;
+    width: 20%;
+	height: 60%;
+    padding: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+ 
+
+<div class="header">
+	
+  <h1>Resume</h1>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+      <h3>Patrick Stephen Mariñas Bayas</h3>
+      <div class="pat1.jpg" style="height:300px;"><img src = "pat1.jpg" alt = "Avatar" style= "width: 200px;"></div>
+  </div>
+  <div class="main">
+      <h2>Motto</h2>
+      <p>Hard Work beats talent when talent doesn't work Hard.</p>
+      <br>
+  </div>
+</div>
+
+
+
+</body>
+</html>
